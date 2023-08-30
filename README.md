@@ -32,3 +32,32 @@ Funcionalidades:
 Errores:
 
 - Se pude mejorar el proceso integrando nuevos indicadores o factores economicos que puedan presentar una mejor correlaciones con los indices.
+
+Analisis TPM - TIB
+![image](https://github.com/jcotrado/PythonForecastIndicePortafolioSerieTiempo/assets/25447366/6c1163a1-140f-4afc-9856-31105564362f)
+
+TPM: Tasa de politica Monetaria
+TIB: Tasa Interbancaria
+
+Pronostico con modelo ARIMA e Indice de portafolio de igual ponderación
+![image](https://github.com/jcotrado/PythonForecastIndicePortafolioSerieTiempo/assets/25447366/6c818625-1845-4938-8b6c-ba3657a6fa39)
+
+La tasa de errores del pronostico con ARIMA son: 
+MSE = 0.074740 
+RMSE = 0.005586
+
+Pronostico con modelo  SARIXMA  e Indice de portafolio de igual ponderación
+![image](https://github.com/jcotrado/PythonForecastIndicePortafolioSerieTiempo/assets/25447366/9bbf8bcf-40d3-4e3e-8b5b-0e706859759f)
+La tasa de error de predicciones SARIMAX es: 
+MSE = 0.074740 
+RMSE = 0.005586
+
+
+Pronostico con modelo  SARIXMA  e Indice de portafolio de ponderación por capital (a una fecha especifica):
+![image](https://github.com/jcotrado/PythonForecastIndicePortafolioSerieTiempo/assets/25447366/1cc30060-a549-486d-9751-6407f8075497)
+La tasa de error de predicciones SARIMAX es: 
+MSE = 0.051829 
+RMSE = 0.005586
+
+
+
