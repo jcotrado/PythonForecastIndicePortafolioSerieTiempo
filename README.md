@@ -29,10 +29,6 @@ Funcionalidades:
           #w = cw_index(<fecha de la inversion>, [<Numero de unidades x activo>], [<Nemonicos>])
           w = capitalizationWeighted("2023-08-14", [1,1], ["FALABELLA","SONDA"])
 
-Errores:
-
-- Se pude mejorar el proceso integrando nuevos indicadores o factores economicos que puedan presentar una mejor correlaciones con los indices.
-
 Analisis TPM - TIB
 ![image](https://github.com/jcotrado/PythonForecastIndicePortafolioSerieTiempo/assets/25447366/6c1163a1-140f-4afc-9856-31105564362f)
 
@@ -60,4 +56,7 @@ MSE = 0.051829
 RMSE = 0.005586
 
 
+Mejoras:
 
+- Se pude mejorar el proceso integrando nuevos indicadores o factores economicos que puedan presentar una mejor correlaciones con los indices.
+- Se pueden probar la fiabilidad con periodos de pruebas mas cortos
