@@ -3,11 +3,11 @@ Proyecto para realizar un pronostico de indice de portafolio con series de tiemp
 
 OBJETIVOS
 
-- Entender Las bases teoricas de las series de tiempo
-- Conocer y preparar los datos de la serie de tiempo y normalizarlos (desde data en bruto, a limpia y procesada para analisis)
-- Entender algunos conceptos de indices basicos y manejo de correlaciones
-- Crear indices para realizar el analisis y pronostico del portafolio (Equal-Weighted y Capitalization-Weight)
-- Realizar un proceso de entrenamiento basico de la serie de tiempo
+- Entender Las bases teóricas de las series de tiempo
+- Conocer y preparar los datos de la serie de tiempo y normalizarlos (desde data en bruto, a limpia y procesada para el análisis)
+- Entender los conceptos básicos de indices de portafolios y del manejo de correlaciones
+- Crear índices para realizar el análisis y pronostico del portafolio (Equal-Weighted y Capitalization-Weight)
+- Ejecutar el proceso de entrenamiento de la serie de tiempo y la selección del modelo, asi como la presentación de los pronosticos vs valores observados
 - Aplicar metodologias de modelos ARIMA and SARIMAX para hacer el pronostico usando series de tiempo
 - Realizar pronosticos utilizando una serie de tiempo desde 2020-01-02 a 2023-08-16
 
@@ -31,9 +31,8 @@ Funcionalidades:
           #w = cw_index(<fecha de la inversion>, [<Numero de unidades x activo>], [<Nemonicos>])
           w = capitalizationWeighted("2023-08-14", [1,1], ["FALABELLA","SONDA"])
 
-Analisis TPM - TIB
+Analisis TPM vs TIB (diferencia)
  ![image](https://github.com/jcotrado/PythonForecastIndicePortafolioSerieTiempo/assets/25447366/caff54de-60e5-499d-80d3-67ae5309783f)
-
 
 TPM: Tasa de politica Monetaria
 TIB: Tasa Interbancaria
@@ -41,14 +40,14 @@ TIB: Tasa Interbancaria
 Pronostico con modelo ARIMA e Indice de portafolio de igual ponderación
 ![image](https://github.com/jcotrado/PythonForecastIndicePortafolioSerieTiempo/assets/25447366/e1915ad2-725f-4817-acc2-74c83f78d882)
 
-La tasa de errores del pronostico con ARIMA son: 
+La tasa de errores del pronostico con ARIMA es: 
 MSE = 0.149988 
 RMSE = 0.022496
 
 Pronostico con modelo  SARIXMA  e Indice de portafolio de igual ponderación
 ![image](https://github.com/jcotrado/PythonForecastIndicePortafolioSerieTiempo/assets/25447366/4a2c69c6-3294-40bc-91e0-b480223480bf)
 
-La tasa de error de predicciones SARIMAX es: 
+La tasa de errores de predicciones con SARIMAX es: 
 MSE = 0.149988 
 RMSE = 0.022496
 
@@ -56,7 +55,7 @@ RMSE = 0.022496
 Pronostico con modelo  SARIXMA  e Indice de portafolio de ponderación por capital (a una fecha especifica):
 ![image](https://github.com/jcotrado/PythonForecastIndicePortafolioSerieTiempo/assets/25447366/260404de-fb7c-4903-98c2-c268b135f738)
 
-La tasa de error de predicciones SARIMAX es: 
+La tasa de errores de predicciones con SARIMAX es: 
 MSE = 0.067973 
 RMSE = 0.022496
 
